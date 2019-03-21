@@ -1,0 +1,63 @@
+<html>
+
+<head>
+	<title>Lista 4 - Tela Responsiva (Cadastro)</title>
+	<meta charset="UTF-8">
+	<link href="lista4.css" rel="stylesheet" type="text/css" />
+	<script src="lista4.js"></script>
+</head>
+
+<body onload="javascript:chamaFuncoes()">
+	<div id="container">
+		<header>
+			<h1 align="center">Site Responsivo</h1>
+			<h3 align="center">Cadastro</h3>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="Lista4.html">HOME</a></li>
+				<li><a href="#">CADASTRO</a>
+					<ul>
+						<li><a href="cadastro.html">Usuário</a></li>
+						<li><a href="#">Animal de estimação</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CONTATO</a></li>
+			</ul>
+		</nav>
+		<section id="conteudoCad">
+			<h1 style="margin-left: 20px">Dados Pessoais</h1>
+			<form>
+				<table width="80%" align="center">
+					<tr>
+						<td><b>Nome: </b></td>
+						<td><b>Apelido: </b></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="nome" required></td>
+						<td><input type="text" id="apelido"></td>
+					</tr>
+					<tr>
+						<td><b>Informe a dezena da sua idade: </b></td>
+					</tr>
+					<tr>
+						<td><input type="number" id="step" step="10" required min="0" max="90"></td>
+					</tr>
+					<tr>
+						<td><b>E-mail: </b><br><input type="text" id="" required></td>
+					</tr>
+					<tr><td><br></td></tr>
+					<tr><td><b>Senha: </b><br><input type="text" id="senha" minlength="6" maxlength="10"></td></tr>
+					<tr><td><b>Confirmar Senha: </b><br><input type="text" id="confirmaSenha" minlength="6" maxlength="10"></td></tr>
+					<tr><td colspan="2" align="right"><input type="button" value="Salvar"></td></tr>
+				</table>
+				<button hidden type="reset" id="btnReset"></button>
+			</form>
+		</section>
+		<footer>
+			<span>Rodapé</span>
+		</footer>
+	</div>
+</body>
+
+</html>

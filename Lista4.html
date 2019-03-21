@@ -3,33 +3,59 @@
         <title>Lista 4 - Tela Responsiva</title>
         <meta charset="UTF-8">
         <link href="lista4.css" rel="stylesheet" type="text/css"/>
-        <!--<script src="lista4.js"></script>-->
+        <script src="lista4.js"></script>
 	</head>
-	<body>
+	<body onload="javascript:carregaInformacoes()">
 		<div id="container">
 			<header>
 				<h1 align="center">Site Responsivo</h1>
 			</header>
 			<nav>
 				<ul>
-					<li><a href="#">Item 1</a>
+					<li><a href="Lista4.html">HOME</a></li>
+					<li><a href="#">CADASTRO</a>
 						<ul>
-							<li><a href="#">Sub-item 1</a></li>
-							<li><a href="#">Sub-item 2</a></li>
+							<li><a href="cadastro.html">Usuário</a></li>
+							<li><a href="#">Senha</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Item 2</a></li>
-					<li><a href="#">Item 3</a></li>
+					<li><a href="#">CONTATO</a></li>
 				</ul>
 			</nav>
 			<section id="conteudo">
-				Conteúdo principal
+				<h1>Procurando Nemo</h1>
+				<div id="dataAtual"></div>
+				<div id="corpoConteudo">
+					<img src="dory.png" alt="Imagem Principal" style="float: left;" width="400px">
+					<p style="text-align:justify;text-indent: 25px;" >
+							O passado reserva tristes memórias para Marlin nos recifes de coral, onde perdeu sua
+							esposa e toda a ninhada. Agora, ele cria seu único filho Nemo com todo o cuidado do
+							mundo, mas o pequeno e simpático peixe-palhaço acaba exagerando durante uma
+							simples discussão e acaba sendo capturado por um mergulhador. Agora, o pai super
+							protetor precisa entrar em ação e parte numa busca incansável pelo mar aberto, na
+							esperança de encontrar seu amado filhote. No meio do caminho, ele acaba conhecendo
+							Dory e, juntos, a dupla vai viver uma incrível aventura. Enquanto isso, Nemo também vive
+							uma intensa experiência ao lado de seus novos amigos habitantes de um aquário, pois eles
+							precisam ajudá-lo a escapar do destino que lhe foi reservado: ir parar nas mãos da terrível
+							Darla, sobrinha do dentista que o capturou. 
+					</p>
+				</div>
 			</section>
 			<section id="menus">
-				Menu lateral
+				Assunto 1
+				<ul>
+					<li><a href="">Tópico 1</a></li>
+					<li><a href="">Tópico 2</a></li>
+					<li><a href="">Tópico 3</a></li>
+				</ul>
+				Assunto 2
+				<ul>
+					<li><a href="">Tópico 1</a></li>
+					<li><a href="">Tópico 2</a></li>
+				</ul>
 			</section>
 			<footer>
-				Rodapé
+				<span>Rodapé</span>
 			</footer>
 		</div>
 	</body>
